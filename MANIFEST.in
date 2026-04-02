@@ -1,0 +1,2 @@
+recursive-include st_swagger_ui/frontend/build *
+include pyproject.toml

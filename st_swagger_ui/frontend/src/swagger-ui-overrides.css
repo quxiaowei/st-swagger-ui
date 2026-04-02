@@ -1,0 +1,35 @@
+/* .swagger-ui .json-schema-2020-12-keyword__children {
+  margin-left: 10px !important;
+}
+
+.swagger-ui .json-schema-2020-12-\$vocabulary-uri {
+  margin-left: 15px !important;
+}
+
+.swagger-ui .json-schema-2020-12-keyword--description,
+.swagger-ui .json-schema-2020-12-keyword__name {
+  margin-left: 10px !important;
+}
+
+.swagger-ui .model-container {
+  margin: 0 10px 10px !important;
+}
+
+.swagger-ui .model-container:first-of-type {
+  margin: 10px !important;
+}
+
+.swagger-ui .model-container:last-of-type {
+  margin: 0 10px 10px !important;
+}
+
+.swagger-ui .model-box {
+  padding: 5px !important;
+}
+
+.swagger-ui .json-schema-2020-12__constraint {
+  margin-left: 5px !important;
+} */
+.swagger-ui table.model tbody tr td:first-of-type {
+  width: auto !important;
+}

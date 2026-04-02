@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Project specific
+uv.lock
+*.log
+
+# Frontend
+st_swagger_ui/frontend/node_modules/
+st_swagger_ui/frontend/build/
+st_swagger_ui/frontend/package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
