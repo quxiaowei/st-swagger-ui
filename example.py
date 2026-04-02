@@ -34,7 +34,7 @@ spec = {
     "paths": {
         "/cn-ninebot/esign/sign-flow/{signFlowId}/revoke": {
             "post": {
-                "tags": ["PUBLIC"],
+                # "tags": ["PUBLIC"],
                 # "summary": "\u64a4\u9500\u7b7e\u7f72\u6d41\u7a0b",
                 "description": "描述:\u64a4\u9500\u7b7e\u7f72\u6d41\u7a0b",
                 "operationId": "urn:CN:Ninebot:PUBLIC:ESIGN-SI_SignFlowRevoke_Out",
@@ -107,5 +107,5 @@ result = st_swagger_ui(
     doc_expansion="full",
     display_operation_id=False,
     default_model_rendering="model",
-    # try_it_out_enabled=False,
+    try_it_out_enabled=False,
 )
