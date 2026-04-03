@@ -14,15 +14,13 @@ Streamlit component for embedding Swagger UI to display OpenAPI/Swagger specific
 ## Installation
 
 ```sh
-uv pip install st_swagger_ui
+uv add st_swagger_ui
 ```
 
-### Development install (editable)
-
-When developing this component locally, install it in editable mode:
+or
 
 ```sh
-uv pip install -e . --force-reinstall
+pip install st_swagger_ui
 ```
 
 ## Usage
@@ -111,73 +109,6 @@ spec = fastapi.openapi.utils.get_openapi(
 )
 
 st_swagger_ui(spec=spec, doc_expansion="list")
-```
-
-## Build Instructions
-
-To package this component for distribution:
-
-### 1. Build Frontend Assets
-
-```sh
-cd st_swagger_ui/frontend
-npm install
-npm run build
-```
-
-### 2. Build Python Wheel
-
-From the project root:
-
-```sh
-uv build
-```
-
-This creates a `dist/` directory containing:
-
-- `dist/st_swagger_ui-<version>-py3-none-any.whl`
-- `dist/st_swagger_ui-<version>.tar.gz` (sdist)
-
-### Requirements
-
-- **Python**: >= 3.10
-- **Node.js**: >= 24 (LTS)
-- **npm**: Latest version (bundled with Node.js)
-
-## Development
-
-### Frontend Development
-
-The frontend is built with:
-
-- React 18
-- TypeScript
-- Vite
-- swagger-ui-react
-
-To run in development mode:
-
-```sh
-cd st_swagger_ui/frontend
-npm run dev
-```
-
-### Project Structure
-
-```
-st_swagger_ui/
-├── st_swagger_ui/
-│   ├── __init__.py          # Python component
-│   └── frontend/
-│       ├── src/
-│       │   ├── index.tsx    # React entry point
-│       │   └── swagger-ui-overrides.css  # Custom CSS
-│       ├── package.json
-│       ├── vite.config.ts
-│       └── build/           # Generated build output
-├── pyproject.toml
-├── README.md
-└── example.py
 ```
 
 ## License
